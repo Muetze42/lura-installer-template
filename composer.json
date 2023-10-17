@@ -3,11 +3,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "norman-huth/lura": "^1.0"
+        "norman-huth/lura": "^v2.1.1"
     },
     "scripts": {
         "post-package-install": [
-            "lura register norman-huth/my-lura-installer"
+            "lura register vendor/my-lura-installer"
         ]
     },
     "minimum-stability": "dev",
