@@ -1,22 +1,17 @@
 <?php
 // phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
 
-use NormanHuth\ConsoleApp\LuraInstaller;
-use Symfony\Component\Console\Command\Command as SymfonyCommand;
+use NormanHuth\Lura\LuraInstaller;
 
 class Installer extends LuraInstaller
 {
     /**
      * Execute the installer console command.
      *
-     * @param mixed|\NormanHuth\ConsoleApp\LuraCommand $command
-     *
-     * @return int
+     * @param mixed|\NormanHuth\Lura\LuraCommand $command
      */
-    public function runLura(mixed $command): int
+    public function runLura(mixed $command)
     {
         // Installer here
-
-        return SymfonyCommand::SUCCESS;
     }
 }
